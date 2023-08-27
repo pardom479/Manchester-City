@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City</title>
+    <link rel="stylesheet" href="mci_style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="Manchester_City_FC_badge.jpg" id="logo">
+        <h1 id="title">MANCHESTER CITY</h1>
+    </header>
+    <nav id="navigationBar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#stadium">Stadium</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#trophies">Trophies</a></li>
+        </ul>
+    </nav>
+    <section id="team23">
+        <h2>One of the best football teams</h2>
+        <div><img src="City_team24.jpg" width="600" alt="City team"></div>
+    </section>
+    <div class="linear-gradient1">
+
+    </div>
+    <section id="about" class="info">
+        <div>
+            <h2>About</h2>
+            <p>Manchester City Football Club are an English professional football club based in Manchester that competes in the Premier League. Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the Etihad Stadium in east Manchester, to which they moved in 2003, having played at Maine Road since 1923. Manchester City adopted their sky blue home shirts in 1894, in the first season with the current name. </p>
+        </div>
+    </section>
+    <div class="linear-gradient2">
+
+    </div>
+    <section id="players">
+        <h2 class="h21">Players</h2>
+        
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Sort players</button>
+            <div id="dropdown-content-container" class="dropdown-content">
+                <a onclick="sortByAges()" class="sortButtons">Increasing order ages</a>
+                <a onclick="sortByAgesDown()" class="sortButtons">Descending order ages</a>
+                <a onclick="sortByPosition()" class="sortButtons">Sort by position</a>
+                <a onclick="sortByName()" class="sortButtons">Names in alphabetical order</a>
+                <a onclick="sortByNation()" class="sortButtons">Nationylity in alphabetical order</a>    
+            </div>
+        </div>
+        
+        <div class="filterDropdown">
+            <button onclick="toggleFilterDropdown()" class="filterDropdownB">Filter players</button>
+            <div id="filterDropdownContainer" class="filterDropdownContent">
+                <a onclick="filterPlayers('GK')" class="filterButtons">GK</a>
+                <a onclick="filterPlayers('LB')" class="filterButtons">LB</a>
+                <a onclick="filterPlayers('CB')" class="filterButtons">CB</a>
+                <a onclick="filterPlayers('RB')" class="filterButtons">RB</a>
+                <a onclick="filterPlayers('CDM')" class="filterButtons">CDM</a>
+                <a onclick="filterPlayers('CM')" class="filterButtons">CM</a>
+                <a onclick="filterPlayers('CAM')" class="filterButtons">CAM</a>
+                <a onclick="filterPlayers('LW')" class="filterButtons">LW</a>
+                <a onclick="filterPlayers('ST')" class="filterButtons">ST</a>
+                <a onclick="filterPlayers('RW')" class="filterButtons">RW</a>
+            </div>
+        </div>
+       
+        <div id="playersFlexContainer"></div>
+    </section>
+    <div class="linear-gradient1"></div>
+    <section id="stadium" class="info">
+        <div>
+            <h2>The stadium</h2>
+            <p>The City of Manchester Stadium (currently known as the Etihad Stadium for sponsorship reasons) is the home of Premier League club Manchester City, with a domestic football capacity of 55,000, making it the 6th-largest football stadium in England and 9th-largest in the United Kingdom. The stadium was built by Laing Construction at a cost of £112 million and was designed and engineered by Arup, whose design incorporated a cable-stayed roof structure and supported entirely by twelve exterior masts and cables. In August 2015, a 7,000 seat third tier on the South Stand was completed, in time for the start of the 2015–16 football season. The expansion was designed to be in keeping with the existing roof design. A £300 million redevelopment programme of the existing North Stand entailing the construction of a new hotel with 400 rooms, covered fan park for 6,000 people and increased net capacity to 61,474 is expected to commence in 2023 and be completed by the end of 2026.</p>
+        </div>
+        <div id="stadiumImgContainer">
+            <div id="stadiumImg">
+                <div><img src="https://i0.wp.com/tfcstadiums.com/wp-content/uploads/2022/04/etihad-stadium-2022-3-getty-images.jpg?w=1920&ssl=1" width="300"></div>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5030.750250872149!2d-2.2041314923952235!3d53.48279367843423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb10dcc950ae3%3A0x549a8dcce67a876a!2sEtihad%20Stadium!5e0!3m2!1sen!2shu!4v1692609206434!5m2!1sen!2shu" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </section>
+    <div class="linear-gradient2"></div>
+    <section id="table">
+        <h2 class="h21">Table</h2>
+        <div id="flexTable">
+            <table id="standings">
+                <tr>
+                    <th colspan="7">Premier League 23/24</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Club</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Brighton</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr id="manCity">
+                    <td>2</td>
+                    <td>Man City</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Brentford</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Liverpool</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Tottenham</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>West Ham</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Newcastle</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Arsenal</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Crystal Palace</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Aston Villa</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Nottm Forest</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Man United</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Fulham</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Bournemouth</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Chelsea</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Sheffield United</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Luton Town</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Burnley</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Wolves</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Everton</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <table id="description">
+                <tr>
+                    <td></td>
+                    <td>UEFA Champions League group stage</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>UEFA Europa League group stage</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Relegation</td>
+                </tr>
+                <tr>
+                    <td><b>MP</b></td>
+                    <td>Matches played</td>
+                </tr>
+                <tr>
+                    <td><b>W</b></td>
+                    <td>Win</td>
+                </tr>
+                <tr>
+                    <td><b>D</b></td>
+                    <td>Draw</td>
+                </tr>
+                <tr>
+                    <td><b>L</b></td>
+                    <td>Loss</td>
+                </tr>
+                <tr>
+                    <td><b>Pts</b></td>
+                    <td>Points</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="linear-gradient1"></div>
+    <section id="trophies" class="info">
+        <div>
+            <h2 class="h21">Trophies</h2>
+            <p>9x League Titles</p>
+            <div id="leagueTitlesContainer" class="cups"></div>
+            <p>7x FA Cups</p>
+            <div id="faCupsContainer" class="cups"></div>
+            <p>8x League Cups</p>
+            <div id="leagueCupsContainer" class="cups"></div>
+            <p>6x FA Community Shields</p>
+            <div id="faCommunityShieldContainer" class="cups"></div>
+            <p>1x UEFA Champions League</p>
+            <div id="uclContainer" class="cups"></div>
+            <p>1x European Cup Winners' Cup</p>
+            <div id="ecwcContainer" class="cups"></div>
+            <p>1x UEFA Super Cup</p>
+            <div id="uscContainer" class="cups"></div>
+        </div>
+    </section>
+    <div class="linear-gradient2"></div>
+    <script src="mci.js"></script>
+    <footer id="footer">
+        <p>2023 Copyright Domi</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body{
+    margin: 0px;
+}
+
+#logo{
+    height: 116.67px;
+    width: 116.67px;
+    padding: 10px;
+}
+
+#title{
+    margin: 0px;
+    position: absolute;
+    display: inline;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 60px;
+    text-shadow: 3px 2px rgb(5, 90, 123);
+}
+
+#header{
+    height: 140px;
+    background-image: linear-gradient(rgb(14, 147, 199), skyblue);
+}
+
+nav{
+    padding: 1rem;
+    background-color: rgb(4, 130, 180);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+}
+
+nav ul li{
+    margin-right: 2rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#team23 h2{
+    text-align: center;
+}
+
+#team23 div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#team23 div img{
+    width: 100%;
+}
+
+.linear-gradient1{
+    height: 100px;
+    background-image: linear-gradient(white, rgb(177, 227, 247));
+}
+
+.info{
+    background-color: rgb(177, 227, 247);
+    padding: 3rem 0;
+}
+
+.info h2{
+    margin: 0;
+    font-size: 30px;
+}
+
+.info p{
+    font-size: 20px;
+}
+
+.info>div {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.linear-gradient2{
+    height: 100px;
+    background-image: linear-gradient(rgb(177, 227, 247),white );
+}
+
+#sortButtonsContainer{
+    margin-left: 0;
+}
+
+#players{
+   width: 70%;
+   margin: 0 auto;
+}
+
+#players h2{
+    margin-bottom: 20px;
+}
+
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 245px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #51a7e0;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color:  rgb(131, 220, 255);
+    width: 245px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a:not(:last-child){
+    border-bottom: 1px solid white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: rgb(172, 228, 250)}
+  
+.show {display: block;}
+
+
+
+
+.filterDropdownB{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 245px;
+    border: none;
+    cursor: pointer;
+}
+
+.filterDropdownB:hover, .filterDropdownB:focus {
+    background-color: #51a7e0;
+}
+  
+.filterDropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.filterDropdownContent {
+    display: none;
+    position: relative;
+    background-color:  rgb(131, 220, 255);
+    width: 245px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.filterDropdownContent a:not(:last-child){
+    border-bottom: 1px solid white;
+}
+
+.filterDropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.filterDropdown a:hover {background-color: rgb(172, 228, 250)}
+  
+.filterShow {display: block;}
+
+
+
+.h21{
+    font-size: 30px;
+    margin: 0;
+}
+
+#playersFlexContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.player{
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.playerName{
+    background-color: rgb(85, 187, 227);
+    border-radius: 10px 10px 0 0;
+}
+
+.playerName h3{
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;
+}
+.playerImg{
+    margin: 0 auto;
+    background-color: rgb(229, 248, 255);
+}
+
+.playerImg img{
+    width: 100%;
+}
+
+.playerDetails{
+    padding: 1rem;
+    background-color: rgb(229, 248, 255);
+    border-radius: 0 0 10px 10px;
+}
+
+.playerDetails p{
+    font-weight: bold;
+}
+
+.playerDetails button{
+    border: none;
+    color: white;
+    background-color: rgb(0, 124, 172);
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#stadiumImgContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#stadiumImg{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#stadiumImg div{
+    width: 100%;
+}
+
+#stadiumImg div img{
+    width: 100%;
+}
+
+#stadium div iframe{
+    width: 100%;
+}
+
+#table{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#standings{
+    text-align: center;
+}
+
+#standings #manCity{
+    font-weight: bold;
+}
+
+#standings, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#standings tr td,
+#standings tr th{
+    padding: 5px;
+}
+
+#standings tr:nth-child(3) td:nth-child(1), 
+#standings tr:nth-child(4) td:nth-child(1), 
+#standings tr:nth-child(5) td:nth-child(1), 
+#standings tr:nth-child(6) td:nth-child(1){
+    background: skyblue;
+    
+}
+
+#standings tr:nth-child(7) td:nth-child(1){
+    background: orange;
+}
+
+#standings tr:nth-child(20) td:nth-child(1),
+#standings tr:nth-child(21) td:nth-child(1),
+#standings tr:nth-child(22) td:nth-child(1){
+    background: rgb(245, 118, 118);
+}
+
+#description{
+    height: 200px;
+    margin-left: 50px;
+}
+
+#description td{
+    border: none;
+}
+
+#description tr:nth-child(1) td:nth-child(1){
+    width: 20px;
+    background: skyblue;
+    
+}
+
+#description tr:nth-child(2) td:nth-child(1){
+    width: 20px;
+    background: orange;
+}
+
+#description tr:nth-child(3) td:nth-child(1){
+    width: 20px;
+    background: rgb(245, 118, 118);
+}
+
+#flexTable{
+    display: flex;
+}
+
+.cups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+figcaption{
+    text-align: center;
+}
+
+#footer{
+    background-color: rgb(0, 81, 113);
+    margin: 0px;
+    height: 80px;
+    color: rgb(199, 226, 237);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
