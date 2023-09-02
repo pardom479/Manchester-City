@@ -306,9 +306,12 @@ nav ul li a{
     font-weight: bold;
 }
 
-#standings, th, td{
-    border: 1px solid black;
+table#standings{
     border-collapse: collapse;
+}
+
+table#standings tr{
+    border: 1px solid black;
 }
 
 #standings tr td,
@@ -332,6 +335,21 @@ nav ul li a{
 #standings tr:nth-child(21) td:nth-child(1),
 #standings tr:nth-child(22) td:nth-child(1){
     background: rgb(245, 118, 118);
+}
+
+.flexInClub{
+    display: flex;
+    align-items: center;
+}
+
+.clubName{
+    text-align: center;
+    margin-left: 5px;
+}
+
+.teamLogo{
+    max-width: 24px;
+    max-height: 24px;
 }
 
 #description{
